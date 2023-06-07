@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&family=Comfortaa:wght@400;600;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  width: fit-content;
+  align-items: center;
+  margin: 20px auto;
+  flex-direction: column;
+  background-color: #f7eee5;
+  border-radius: 40px;
+  padding: 25px;
+  box-shadow: rgb(85, 91, 255) 0px 0px 0px 3px, rgb(31, 193, 27) 0px 0px 0px 6px, rgb(255, 217, 19) 0px 0px 0px 9px, rgb(255, 156, 85) 0px 0px 0px 12px, rgb(255, 85, 85) 0px 0px 0px 15px;
+}
+
+.header {
+  font-size: 34px;
+}
+
+.header,
+.tasks-header {
+  font-family: 'Cherry Bomb One', cursive;
+  font-weight: 400;
+  color: #ff5420;
+}
+
+.tasks-header {
+  font-size: 28px;
+}
+
+.form-row {
+  font-family: 'Comfortaa', cursive;
+  font-size: 16px;
+  color: #095fcf;
+}
+
+#item {
+  border: 1px solid #374259;
+  border-radius: 5px;
+  height: 25px;
+}
+
+#item:active,
+#item:focus {
+  background-color: rgba(192, 238, 174, 0.781);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+
+}
+
+input[type=text] {
+  font-family: 'Comfortaa', cursive;
+  font-size: 16px;
+}
+
+.btn-add {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin: 5px auto;
+  width: 55px;
+  font-family: 'Comfortaa', cursive;
+  font-weight: 700;
+  padding: 5px;
+  background-color: #3bb40b;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.btn-add:hover {
+  box-shadow: rgba(10, 92, 51, 0.788) 3px 3px 6px 0px inset, rgba(61, 179, 144, 0.5) -3px -3px 6px 1px inset;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  list-style: none;
+  margin: 0 auto;
+  font-family: 'Comfortaa', cursive;
+  font-weight: 700;
+}
+
+input[type="checkbox"] {
+  outline: 3px solid #f85025;
+  accent-color: #91eb47;
+  cursor: pointer;
+}
+
+input:checked {
+  outline: 2px solid #205f07;
+  color: #3a3738f6;
+}
+
+.btn-checkbox {
+  margin: 5px;
+}
+
+.btn-delete {
+  background-color: rgb(233, 57, 57);
+  font-family: 'Comfortaa', cursive;
+  font-weight: 700;
+  font-size: 14px;
+  cursor: pointer;
+  border: 2px solid rgb(170, 36, 36);
+  border-radius: 8px;
+  color: black;
+}
+
+.btn-delete:hover {
+  box-shadow: rgba(92, 10, 10, 0.788) 3px 3px 6px 0px inset, rgba(179, 61, 61, 0.5) -3px -3px 6px 1px inset;
+}
